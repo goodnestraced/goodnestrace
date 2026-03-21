@@ -1,17 +1,30 @@
-<div class="text-center py-10 md:py-20 page-transition">
-    <h1 class="text-4xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent" data-i18n="hero-title">AX STUDIOS</h1>
-    <p class="text-gray-400 text-base md:text-xl max-w-2xl mx-auto mb-10" data-i18n="hero-desc">Programador de Paginas Webs, Aplicaciones de Discord, Configurador de Minecraft y plugins.</p>
-    
-    <div id="discord-card" class="glass-card max-w-xs md:max-w-sm mx-auto p-6 rounded-2xl flex items-center space-x-4 text-left cursor-pointer hover:bg-white/5 transition-all active:scale-95 group relative overflow-hidden" onclick="window.copyDiscordHome()">
-        <div class="relative flex-shrink-0">
-            <img id="discord-avatar-home" src="/assets/discord-avatar.png" class="w-14 h-14 rounded-full border border-white/10" alt="Avatar">
-            <div id="discord-status-dot-home" class="absolute bottom-0 right-0 status-dot offline border-2 border-black"></div>
+<div class="page-transition">
+    <div class="text-center py-10 md:py-20">
+        <h1 class="text-4xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent" data-i18n="hero-title">GOODNESTRACE</h1>
+        <p class="text-gray-400 text-base md:text-xl max-w-2xl mx-auto mb-8" data-i18n="hero-desc">Desarrollador web, Desarrollador de Discord y Configurador de Plugins</p>
+        
+        <div class="flex flex-wrap justify-center gap-8 mb-12">
+            <div class="text-center">
+                <div class="text-3xl font-bold text-white">2+</div>
+                <div class="text-xs text-gray-500 uppercase tracking-wider" data-i18n="stat-years">Años de experiencia</div>
+            </div>
         </div>
-        <div class="flex-1 min-w-0">
-            <h3 class="font-bold text-gray-200 group-hover:text-white transition-colors truncate" id="discord-name-home">Cargando...</h3>
-            <p id="discord-status-text-home" class="text-[10px] text-gray-500 uppercase tracking-widest flex items-center truncate">Conectando...</p>
+
+        <div id="discord-card" class="glass-card max-w-xs md:max-w-sm mx-auto p-6 rounded-2xl flex items-center space-x-4 text-left cursor-pointer hover:bg-white/5 transition-all active:scale-95 group relative overflow-hidden" onclick="window.copyDiscordHome()">
+            <div class="relative flex-shrink-0">
+                <img id="discord-avatar-home" src="https://ui-avatars.com/api/?name=GoodnesTrace&background=333&color=fff" class="w-14 h-14 rounded-full border border-white/10" alt="Avatar">
+                <div id="discord-status-dot-home" class="absolute bottom-0 right-0 status-dot offline border-2 border-black"></div>
+            </div>
+            <div class="flex-1 min-w-0">
+                <h3 class="font-bold text-gray-200 group-hover:text-white transition-colors truncate" id="discord-name-home">Cargando...</h3>
+                <p id="discord-status-text-home" class="text-[10px] text-gray-500 uppercase tracking-widest flex items-center truncate">Cargando...</p>
+            </div>
+            <div id="copy-toast-home" class="absolute inset-0 bg-white/90 flex items-center justify-center text-black text-[10px] font-bold opacity-0 transition-opacity pointer-events-none uppercase" data-i18n="discord-copied">Copiado!</div>
         </div>
-        <div id="copy-toast-home" class="absolute inset-0 bg-white/90 flex items-center justify-center text-black text-[10px] font-bold opacity-0 transition-opacity pointer-events-none uppercase" data-i18n="discord-copied">Copiado exitosamente!</div>
+    </div>
+
+    <div class="text-center py-12">
+        <a href="#/contact" data-link class="inline-block bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition" data-i18n="cta-button">¡Trabajemos juntos!</a>
     </div>
 </div>
 
