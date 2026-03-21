@@ -1,0 +1,35 @@
+<div class="py-10 page-transition">
+    <h2 class="text-3xl font-bold mb-8 text-center" data-i18n="contact-title">Contacto</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="https://discord.com/users/goodnestrace" target="_blank" class="glass-card p-6 rounded-xl flex flex-col items-center group">
+            <i class="fab fa-discord text-2xl mb-2 text-gray-400 group-hover:text-white transition"></i>
+            <span class="text-xs font-bold uppercase tracking-wider">@goodnestrace</span>
+        </a>
+        <a href="https://discord.gg/wGwmZsYJct" target="_blank" class="glass-card p-6 rounded-xl flex flex-col items-center group">
+            <i class="fas fa-users text-2xl mb-2 text-gray-400 group-hover:text-white transition"></i>
+            <span class="text-xs font-bold uppercase tracking-wider">Support Server</span>
+        </a>
+        <a href="mailto:grizzlyteam.support@gmail.com?subject=Contacto%20Web" class="glass-card p-6 rounded-xl flex flex-col items-center group">
+            <i class="fas fa-envelope text-2xl mb-2 text-gray-400 group-hover:text-white transition"></i>
+            <span class="text-xs font-bold uppercase tracking-wider">Email</span>
+        </a>
+        <a href="https://instagram.com/goodnestrace" target="_blank" class="glass-card p-6 rounded-xl flex flex-col items-center group">
+            <i class="fab fa-instagram text-2xl mb-2 text-gray-400 group-hover:text-white transition"></i>
+            <span class="text-xs font-bold uppercase tracking-wider">Instagram</span>
+        </a>
+    </div>
+
+    <!-- Tarjeta de Discord en contacto (opcional, pero la mantenemos) -->
+    <div class="mt-12 max-w-md mx-auto">
+        <div class="glass-card p-6 rounded-2xl flex items-center space-x-4">
+            <div class="relative">
+                <img id="discord-avatar" src="/assets/discord-avatar.png" class="w-14 h-14 rounded-full border border-white/10" alt="Avatar">
+                <div id="discord-status-dot" class="absolute bottom-0 right-0 status-dot offline border-2 border-black"></div>
+            </div>
+            <div>
+                <h3 id="discord-name" class="font-bold">Cargando...</h3>
+                <p id="discord-status-text" class="text-xs text-gray-400">Conectando...</p>
+            </div>
+        </div>
+    </div>
+</div>
