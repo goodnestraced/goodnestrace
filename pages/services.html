@@ -1,15 +1,38 @@
-<div class="py-10 page-transition">
+<div class="page-transition">
     <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-i18n="services-title">Servicios</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="glass-card p-8 rounded-2xl border border-white/5">
-            <i class="fas fa-hammer text-2xl mb-4 text-gray-400"></i>
-            <h3 class="text-xl font-bold mb-2" data-i18n="services-dev-title">Desarrollo</h3>
-            <p class="text-sm text-gray-500" data-i18n="services-dev-desc">Creación de bots, configuraciones de servidores y soluciones personalizadas.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="glass-card p-8 rounded-2xl hover:scale-[1.02] transition-transform">
+            <i class="fas fa-hammer text-3xl mb-4 text-gray-400"></i>
+            <h3 class="text-2xl font-bold mb-3" data-i18n="services-dev-title">Desarrollo</h3>
+            <p class="text-gray-400 mb-4" data-i18n="services-dev-desc">Creación de bots, configuraciones de servidores y soluciones personalizadas.</p>
+            <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                <li><i class="fas fa-chevron-right mr-2 text-xs"></i> <span data-i18n="dev-bots">Bots de Discord (moderación, música, economía)</span></li>
+                <li><i class="fas fa-chevron-right mr-2 text-xs"></i> <span data-i18n="dev-minecraft">Configuración avanzada de servidores Minecraft (Spigot/Paper)</span></li>
+                <li><i class="fas fa-chevron-right mr-2 text-xs"></i> <span data-i18n="dev-web">Aplicaciones web personalizadas</span></li>
+            </ul>
+            <div class="flex flex-wrap gap-2">
+                <span class="text-xs bg-white/10 px-3 py-1 rounded-full">JavaScript</span>
+                <span class="text-xs bg-white/10 px-3 py-1 rounded-full">Discord.js</span>
+            </div>
         </div>
-        <div class="glass-card p-8 rounded-2xl border border-white/5">
-            <i class="fas fa-code text-2xl mb-4 text-gray-400"></i>
-            <h3 class="text-xl font-bold mb-2" data-i18n="services-prog-title">Programación</h3>
-            <p class="text-sm text-gray-500" data-i18n="services-prog-desc">Código limpio, eficiente y bien documentado para cualquier proyecto.</p>
+        <div class="glass-card p-8 rounded-2xl hover:scale-[1.02] transition-transform">
+            <i class="fas fa-code text-3xl mb-4 text-gray-400"></i>
+            <h3 class="text-2xl font-bold mb-3" data-i18n="services-prog-title">Programación</h3>
+            <p class="text-gray-400 mb-4" data-i18n="services-prog-desc">Código limpio, eficiente y bien documentado para cualquier proyecto.</p>
+            <ul class="text-sm text-gray-500 space-y-2 mb-6">
+                <li><i class="fas fa-chevron-right mr-2 text-xs"></i> <span data-i18n="prog-api">Desarrollo de APIs RESTful</span></li>
+                <li><i class="fas fa-chevron-right mr-2 text-xs"></i> <span data-i18n="prog-automation">Automatización de tareas y scripts</span></li>
+                <li><i class="fas fa-chevron-right mr-2 text-xs"></i> <span data-i18n="prog-database">Diseño y optimización de bases de datos</span></li>
+            </ul>
+            <div class="flex flex-wrap gap-2">
+                <span class="text-xs bg-white/10 px-3 py-1 rounded-full">JavaScript/TS</span>
+                <span class="text-xs bg-white/10 px-3 py-1 rounded-full">PHP</span>
+                <span class="text-xs bg-white/10 px-3 py-1 rounded-full">SQL</span>
+                <span class="text-xs bg-white/10 px-3 py-1 rounded-full">Git</span>
+            </div>
         </div>
+    </div>
+    <div class="text-center mt-12">
+        <a href="#/contact" data-link class="inline-block bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition" data-i18n="cta-button">Contáctanos</a>
     </div>
 </div>
