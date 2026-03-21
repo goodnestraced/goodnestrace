@@ -1,35 +1,67 @@
-<div class="py-10 page-transition">
+<div class="page-transition">
     <h2 class="text-3xl font-bold mb-8 text-center" data-i18n="contact-title">Contacto</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <a href="https://discord.com/users/goodnestrace" target="_blank" class="glass-card p-6 rounded-xl flex flex-col items-center group">
-            <i class="fab fa-discord text-2xl mb-2 text-gray-400 group-hover:text-white transition"></i>
-            <span class="text-xs font-bold uppercase tracking-wider">@goodnestrace</span>
-        </a>
-        <a href="https://discord.gg/wGwmZsYJct" target="_blank" class="glass-card p-6 rounded-xl flex flex-col items-center group">
-            <i class="fas fa-users text-2xl mb-2 text-gray-400 group-hover:text-white transition"></i>
-            <span class="text-xs font-bold uppercase tracking-wider">Support Server</span>
-        </a>
-        <a href="mailto:grizzlyteam.support@gmail.com?subject=Contacto%20Web" class="glass-card p-6 rounded-xl flex flex-col items-center group">
-            <i class="fas fa-envelope text-2xl mb-2 text-gray-400 group-hover:text-white transition"></i>
-            <span class="text-xs font-bold uppercase tracking-wider">Email</span>
-        </a>
-        <a href="https://instagram.com/goodnestrace" target="_blank" class="glass-card p-6 rounded-xl flex flex-col items-center group">
-            <i class="fab fa-instagram text-2xl mb-2 text-gray-400 group-hover:text-white transition"></i>
-            <span class="text-xs font-bold uppercase tracking-wider">Instagram</span>
-        </a>
-    </div>
-
-    <!-- Tarjeta de Discord en contacto (opcional, pero la mantenemos) -->
-    <div class="mt-12 max-w-md mx-auto">
-        <div class="glass-card p-6 rounded-2xl flex items-center space-x-4">
-            <div class="relative">
-                <img id="discord-avatar" src="/assets/discord-avatar.png" class="w-14 h-14 rounded-full border border-white/10" alt="Avatar">
-                <div id="discord-status-dot" class="absolute bottom-0 right-0 status-dot offline border-2 border-black"></div>
+    <div class="grid md:grid-cols-2 gap-12">
+        <div>
+            <form id="contact-form" action="https://formspree.io/f/xqeyoavk" method="POST" class="space-y-4">
+                <div><label class="block text-sm font-medium mb-1" data-i18n="contact-name">Nombre</label><input type="text" name="name" required class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-white/20"></div>
+                <div><label class="block text-sm font-medium mb-1" data-i18n="contact-email">Email</label><input type="email" name="_replyto" required class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-white/20"></div>
+                <div><label class="block text-sm font-medium mb-1" data-i18n="contact-message">Mensaje</label><textarea name="message" rows="5" required class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-white/20"></textarea></div>
+                <button type="submit" class="w-full bg-white text-black font-bold py-2 rounded-lg hover:bg-gray-200 transition" data-i18n="contact-send">Enviar mensaje</button>
+                <p id="form-status" class="text-sm text-center hidden"></p>
+            </form>
+        </div>
+        <div>
+            <div class="glass-card p-6 rounded-xl mb-6">
+                <h3 class="text-xl font-bold mb-4" data-i18n="contact-info">Información directa</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-3"><i class="fab fa-discord text-gray-400 w-5"></i><span>@goodnestrace</span></div>
+                    <div class="flex items-center space-x-3"><i class="fas fa-envelope text-gray-400 w-5"></i><span>lens.goodnestrace@gmail.com</span></div>
+                    <div class="flex items-center space-x-3"><i class="fab fa-instagram text-gray-400 w-5"></i><span>@goodnestrace</span></div>
+                </div>
             </div>
-            <div>
-                <h3 id="discord-name" class="font-bold">Cargando...</h3>
-                <p id="discord-status-text" class="text-xs text-gray-400">Conectando...</p>
+            <div class="glass-card p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-4" data-i18n="contact-hours">Horario de atención</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><span class="font-medium">Lunes a Viernes:</span> 18:00 - 21:30 (GMT-3)</li>
+                    <li><span class="font-medium">Sábados:</span> 13:00 - 17:00</li>
+                    <li><span class="font-medium">Domingos:</span> Cerrado</li>
+                </ul>
+                <p class="text-xs text-gray-500 mt-4" data-i18n="contact-response">Respondemos en menos de 24 horas hábiles.</p>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    const form = document.getElementById('contact-form');
+    const statusDiv = document.getElementById('form-status');
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            statusDiv.classList.remove('hidden');
+            statusDiv.innerText = 'Enviando...';
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (response.ok) {
+                    statusDiv.innerText = '¡Mensaje enviado con éxito! Te contactaremos pronto.';
+                    statusDiv.classList.add('text-green-400');
+                    form.reset();
+                } else {
+                    throw new Error('Error');
+                }
+            } catch (error) {
+                statusDiv.innerText = 'Error al enviar. Intenta de nuevo más tarde.';
+                statusDiv.classList.add('text-red-400');
+            }
+            setTimeout(() => {
+                statusDiv.classList.add('hidden');
+                statusDiv.classList.remove('text-green-400', 'text-red-400');
+            }, 5000);
+        });
+    }
+</script>
