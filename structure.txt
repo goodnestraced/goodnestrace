@@ -1,0 +1,17 @@
+portfolio/
+├── index.html                 # Punto de entrada, solo carga los módulos
+├── css/
+│   └── styles.css             # Estilos globales, animaciones y efectos
+├── js/
+│   ├── app.js                 # Inicialización de la aplicación
+│   ├── router.js              # Enrutador con history API
+│   ├── lanyard.js             # Estado de Discord (Lanyard)
+│   ├── music.js               # Control de música de fondo con visualizador
+│   ├── i18n.js                # Sistema de internacionalización
+│   └── particles.js           # Fondo animado con partículas estilo estrellas
+├── pages/
+│   ├── home.html              # Página de inicio (sección principal)
+│   ├── services.html          # Servicios ofrecidos
+│   ├── contact.html           # Contacto con tarjetas sociales y Discord
+│   └── projects.html          # Proyectos destacados (nueva sección)
+└── assets/                    # (Opcional) imágenes, iconos locales

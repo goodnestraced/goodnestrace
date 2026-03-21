@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>LensDev | Portafolio</title>
+    <link rel="icon" type="image/png" href="/assets/icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-black text-white antialiased overflow-x-hidden">
+
+    <canvas id="bg-canvas" class="fixed top-0 left-0 w-full h-full -z-10 opacity-70"></canvas>
+
+    <nav class="fixed top-0 w-full z-50 glass-nav px-6 py-4 flex justify-between items-center">
+        <a href="#/" class="text-xl font-bold bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">AX STUDIOS</a>
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#/" data-link>Inicio</a>
+            <a href="#/services" data-link>Servicios</a>
+            <a href="#/projects" data-link>Proyectos</a>
+            <a href="#/contact" data-link>Contacto</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <select id="language-selector" class="bg-black/50 text-white text-xs border border-white/20 rounded px-2 py-1 outline-none">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+                <option value="rs">RS</option>
+                <option value="fr">FR</option>
+            </select>
+            <button id="music-toggle" class="bg-white/5 w-10 h-10 rounded-full flex items-center justify-center relative">
+                <div id="eq-bars" class="flex items-end h-4 gap-[2px] absolute">
+                    <div class="w-[3px] bg-white animate-eq" style="animation-delay: 0s"></div>
+                    <div class="w-[3px] bg-white animate-eq" style="animation-delay: 0.2s"></div>
+                    <div class="w-[3px] bg-white animate-eq" style="animation-delay: 0.4s"></div>
+                </div>
+                <i id="music-icon" class="fas fa-music text-gray-400 opacity-0 transition-opacity"></i>
+            </button>
+            <button id="mobile-menu-btn" class="md:hidden text-gray-400 text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main id="app" class="pt-32 pb-12 px-6 max-w-6xl mx-auto relative z-10 min-h-[80vh]">
+        <div class="flex justify-center items-center h-64">
+            <div class="loader"></div>
+        </div>
+    </main>
+
+    <footer class="text-center py-9 text-gray-600 text-sm border-t border-white/5">
+        Copyright &copy; AX STUDIOS 2026. All rights reserved.
+    </footer>
+
+    <audio id="bg-audio" loop preload="auto">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3" type="audio/mpeg">
+    </audio>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
