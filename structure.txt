@@ -1,17 +1,23 @@
 portfolio/
-├── index.html                 # Punto de entrada, solo carga los módulos
+├── index.html
 ├── css/
-│   └── styles.css             # Estilos globales, animaciones y efectos
+│   └── styles.css
 ├── js/
-│   ├── app.js                 # Inicialización de la aplicación
-│   ├── router.js              # Enrutador con history API
-│   ├── lanyard.js             # Estado de Discord (Lanyard)
-│   ├── music.js               # Control de música de fondo con visualizador
-│   ├── i18n.js                # Sistema de internacionalización
-│   └── particles.js           # Fondo animado con partículas estilo estrellas
+│   ├── app.js
+│   ├── router.js
+│   ├── lanyard.js
+│   ├── music.js
+│   ├── i18n.js
+│   └── particles.js
 ├── pages/
-│   ├── home.html              # Página de inicio (sección principal)
-│   ├── services.html          # Servicios ofrecidos
-│   ├── contact.html           # Contacto con tarjetas sociales y Discord
-│   └── projects.html          # Proyectos destacados (nueva sección)
-└── assets/                    # (Opcional) imágenes, iconos locales
+│   ├── home.html
+│   ├── services.html
+│   ├── projects.html
+│   └── contact.html
+└── languages/
+│   ├── es.json
+│   ├── en.json
+│   └── **Puedes agregar mas idiomas por si quieres hacerlo, en JSON**
+└── assets/
+    ├── discord-avatar.png
+    └── icon.png
