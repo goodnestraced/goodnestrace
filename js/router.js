@@ -40,10 +40,10 @@ export default class Router {
     
     updateTitle(pageName) {
         const titles = {
-            home: 'Inicio | AX Studios',
-            services: 'Servicios | AX Studios',
-            projects: 'Proyectos | AX Studios',
-            contact: 'Contacto | AX Studios'
+            home: 'Inicio',
+            services: 'Servicios',
+            projects: 'Proyectos',
+            contact: 'Contacto'
         };
         document.title = titles[pageName] || 'AX Studios';
     }
