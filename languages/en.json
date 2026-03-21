@@ -1,0 +1,53 @@
+{
+    "nav-home": "Home",
+    "nav-services": "Services",
+    "nav-projects": "Projects",
+    "nav-contact": "Contact",
+    "footer-copyright": "Copyright © AX STUDIOS 2026. All rights reserved.",
+
+    "hero-title": "GOODNESTRACE",
+    "hero-desc": "Web Developer, Discord Developer, and Plugin Configurator.",
+    "stat-years": "Years of experience",
+    "cta-button": "Let's work together!",
+    "copy-discord": "Copy Discord",
+    "discord-copied": "Copied!",
+
+    "services-title": "Services",
+    "services-dev-title": "Development",
+    "services-dev-desc": "Creation of bots, server configurations and custom solutions.",
+    "dev-bots": "Discord bots (moderation, music, economy)",
+    "dev-minecraft": "Advanced Minecraft server setup (Spigot/Paper)",
+    "dev-web": "Custom web applications",
+    "services-prog-title": "Programming",
+    "services-prog-desc": "Clean, efficient and well-documented code for any project.",
+    "prog-api": "RESTful API development",
+    "prog-automation": "Task automation and scripts",
+    "prog-database": "Database design and optimization",
+
+    "projects-title": "Projects",
+
+    "project-lenshook": "Lenshook",
+    "project-lenshook-desc": "Personalized messages in embedded or regular messages, via webhook",
+
+    "project-lenstimer": "Lenstimer",
+    "project-lenstimer-desc": "Dynamic timestaps for marking times on Discord, for use in events, rewards, etc.",
+
+    "project-portfolio": "Goodnestrace Portfolio",
+    "project-portfolio-desc": "GoodnesTrace portfolio with animations, routing, and real-time Discord status.",
+    "project-portfolio-ext": "Modern, fully responsive design, Lanyard API integration, and multi-language support.",
+
+    "project-view": "View proyect →",
+
+    "contact-title": "Contact",
+    "contact-name": "Name",
+    "contact-email": "Email",
+    "contact-message": "Message",
+    "contact-send": "Send message",
+    "contact-info": "Direct info",
+    "contact-hours": "Business hours",
+    "contact-response": "We respond within 24 business hours.",
+    "discord-user": "@goodnestrace",
+    "discord-server": "Discord Server",
+    "gmail": "Gmail",
+    "instagram": "Instagram"
+}
