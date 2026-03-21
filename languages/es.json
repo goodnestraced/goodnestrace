@@ -1,0 +1,53 @@
+{
+    "nav-home": "Inicio",
+    "nav-services": "Servicios",
+    "nav-projects": "Proyectos",
+    "nav-contact": "Contacto",
+    "footer-copyright": "Copyright © AX STUDIOS 2026. Todos los derechos reservados.",
+
+    "hero-title": "GOODNESTRACE",
+    "hero-desc": "Desarrollador web, Desarrollador de Discord y Configurador de Plugins.",
+    "stat-years": "Años de experiencia",
+    "cta-button": "¡Trabajemos juntos!",
+    "copy-discord": "Copiar Discord",
+    "discord-copied": "¡Copiado!",
+
+    "services-title": "Servicios",
+    "services-dev-title": "Desarrollo",
+    "services-dev-desc": "Creación de bots, configuraciones de servidores y soluciones personalizadas.",
+    "dev-bots": "Bots de Discord (moderación, música, economía)",
+    "dev-minecraft": "Configuración avanzada de servidores Minecraft (Spigot/Paper)",
+    "dev-web": "Aplicaciones web personalizadas",
+    "services-prog-title": "Programación",
+    "services-prog-desc": "Código limpio, eficiente y bien documentado para cualquier proyecto.",
+    "prog-api": "Desarrollo de APIs RESTful",
+    "prog-automation": "Automatización de tareas y scripts",
+    "prog-database": "Diseño y optimización de bases de datos",
+
+    "projects-title": "Projectos",
+
+    "project-lenshook": "Lenshook",
+    "project-lenshook-desc": "Mensajes personalizados en Mensajes embed o normales, mediante webhook",
+
+    "project-lenstimer": "Lenstimer",
+    "project-lenstimer-desc": "Timestaps dinamicas para marcar horas en discord, uso para eventos, rewards, etc",
+
+    "project-portfolio": "Goodnestrace Portafolio",
+    "project-portfolio-desc": "Portafolio de GoodnesTrace con animaciones, enrutamiento y estado de discord en tiempo real.",
+    "project-portfolio-ext": "Diseño moderno, completamente responsive, integración con API de Lanyard y soporte multi-idioma.",
+
+    "project-view": "Ver proyecto →",
+
+    "contact-title": "Contacto",
+    "contact-name": "Nombre",
+    "contact-email": "Email",
+    "contact-message": "Mensaje",
+    "contact-send": "Enviar mensaje",
+    "contact-info": "Información directa",
+    "contact-hours": "Horario de atención",
+    "contact-response": "Respondemos en menos de 24 horas hábiles.",
+    "discord-user": "@goodnestrace",
+    "discord-server": "Servidor de Discord",
+    "gmail": "Gmail",
+    "instagram": "Instagram"
+}
