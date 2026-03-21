@@ -4,7 +4,7 @@ export default class Router {
             '/': 'home',
             '/services': 'services',
             '/projects': 'projects',
-            'contact': 'contact'
+            '/contact': 'contact'
         };
         this.currentPage = null;
     }
