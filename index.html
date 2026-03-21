@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>LensDev | Portafolio</title>
-    <link rel="icon" type="image/png" href="/assets/icon.png">
+    <title>Goodnes Trace | Portafolio</title>
+    <link rel="icon" type="image/webp" href="/assets/icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -14,19 +14,17 @@
     <canvas id="bg-canvas" class="fixed top-0 left-0 w-full h-full -z-10 opacity-70"></canvas>
 
     <nav class="fixed top-0 w-full z-50 glass-nav px-6 py-4 flex justify-between items-center">
-        <a href="#/" class="text-xl font-bold bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">AX STUDIOS</a>
+        <a href="#/" class="text-xl font-bold bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">GOODNESTRACE</a>
         <div class="hidden md:flex space-x-8 text-sm font-medium">
-            <a href="/#" data-link>Inicio</a>
-            <a href="/services" data-link>Servicios</a>
-            <a href="/projects" data-link>Proyectos</a>
-            <a href="/contact" data-link>Contacto</a>
+            <a href="#/" data-link data-i18n="nav-home">Inicio</a>
+            <a href="#/services" data-link data-i18n="nav-services">Servicios</a>
+            <a href="#/projects" data-link data-i18n="nav-projects">Proyectos</a>
+            <a href="#/contact" data-link data-i18n="nav-contact">Contacto</a>
         </div>
         <div class="flex items-center space-x-4">
             <select id="language-selector" class="bg-black/50 text-white text-xs border border-white/20 rounded px-2 py-1 outline-none">
-                <option value="es">ES</option>
-                <option value="en">EN</option>
-                <option value="rs">RS</option>
-                <option value="fr">FR</option>
+                <option value="es">Español</option>
+                <option value="en">English</option>
             </select>
             <button id="music-toggle" class="bg-white/5 w-10 h-10 rounded-full flex items-center justify-center relative">
                 <div id="eq-bars" class="flex items-end h-4 gap-[2px] absolute">
@@ -49,7 +47,7 @@
     </main>
 
     <footer class="text-center py-9 text-gray-600 text-sm border-t border-white/5">
-        Copyright &copy; AX STUDIOS 2026. All rights reserved.
+        <span data-i18n="footer-copyright">Copyright &copy; AX STUDIOS 2026. All rights reserved.</span>
     </footer>
 
     <audio id="bg-audio" loop preload="auto">
